@@ -1,0 +1,21 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.\" Convert to a pdf using 'man -t ./mortgage.man | ps2pdf - > .pdf'
+.TH mortgage 1 "April 2017" "Mortgage Repayment Documentation"
+.SH NAME
+mortgage \- Tells you the repayments on a standard repayment mortgage
+.SH SYNOPSIS
+.B mortgage -a <amount> -i <interest rate (APR)> -d <duration in years>
+.SH DESCRIPTION
+.B Mortgage
+Given the amount of the loan, the duration
+and the interest rate, it displays the monthly and annual repayments
+along with the total cost of the loan
+.SH BUGS
+None known
+.SH Build
+/usr/local/git/bin/epm-make -svndir /svn/packages/ git-syscheck
+.SH Author
+Tim Jinkerson - GIT <tim.jinkerson@oracle.com>
+
